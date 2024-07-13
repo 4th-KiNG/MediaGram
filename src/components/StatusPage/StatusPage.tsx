@@ -26,7 +26,7 @@ const StatusPage = () => {
                     time={"01.07.2024 / 21:59:33"}
                 />
             </div>
-            <Button text={"Вернуться на главную страницу"} onClick={() => {nav("/main")}} />
+            <Button text={"Вернуться на главную страницу"} onClick={() => {nav("/")}} />
         </div>
         </>
     );
