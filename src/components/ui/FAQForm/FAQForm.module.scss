@@ -1,0 +1,77 @@
+.FAQForm{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: #052C82, $alpha: 0.5);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.FAQ_Block{
+    position: relative;
+    background-color: white;
+    width: 100%;
+    border-radius: 12px;
+    padding-top: 48px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    &_Title{
+        font-size: 20px;
+        font-weight: 500;
+        color: #020213;
+    }
+}
+
+
+.FAQModule{
+    display: flex;
+    padding: 16px;
+    align-items: center;
+    gap: 16px;
+    background-color: #E7F2FF;
+    border: 1px #C8DCF4 solid;
+    border-radius: 12px;
+    &>p{
+        font-size: 14px;
+        color: #020213;
+    }
+    &>h1{
+        font-size: 24px;
+        background: linear-gradient(180deg, #0177FB 0%, #004CF4 100%);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+}
+
+.Modules{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin-top: 24px;
+}
+
+.Cross{
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}

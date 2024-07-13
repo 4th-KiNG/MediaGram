@@ -1,0 +1,26 @@
+.Warning{
+    width: calc(100vw - 40px);
+    background-color: #FFF0E5;
+    border: 1px #F6D9C4 solid;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    gap: 10px;
+    align-items: start;
+    &_Header{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        &>h2{
+            color: #020213;
+            font-size: 14px;
+            font-weight: 600;
+        }
+    }
+    &>p{
+        font-size: 12px;
+        font-weight: 400;
+        color: #020213;
+    }
+}

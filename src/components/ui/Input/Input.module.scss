@@ -1,0 +1,23 @@
+.Input{
+    position: relative;
+    width: calc(100vw - 40px);
+    padding: 16px;
+    border-radius: 12px;
+    background-color: rgba($color: #FFFFFF, $alpha: 0.2);
+    border: 1px rgba($color: #FFFFFF, $alpha: 0.1) solid;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    &>input{
+        font-size: 14px;
+        background-color: transparent;
+        border: 0px;
+        outline: 0px;
+        flex-grow: 1;
+        width: 100%;
+    }
+    &>p{
+        font-size: 14px;
+        font-weight: 400;
+    }
+}

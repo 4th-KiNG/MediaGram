@@ -1,0 +1,29 @@
+.FAQ{
+    display: flex;
+    padding: 24px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 12px;
+    border: 1px rgba(255,255,255,0.1) solid;
+    justify-content: space-between;
+    &_Text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+        gap: 13px;
+        &>h3{
+            font-size: 16px;
+            font-weight: 500;
+            max-width: 190px;
+        }
+        &>p{
+            font-size: 14px;
+            font-weight: 400;
+            color: #42FFB0;
+        }
+    }
+    &_Ico{
+        width: 40px;
+        height: 40px;
+    }
+}

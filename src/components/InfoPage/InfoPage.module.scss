@@ -1,0 +1,70 @@
+.InfoPage{
+    min-height: 100vh;
+    padding-top: 36px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    justify-content: space-between;
+}
+
+
+.FAQ{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    &_Block{
+        padding: 24px 20px;
+        background-color: rgba($color: #FFFFFF, $alpha: 0.2);
+        border: 1px rgba($color: #FFFFFF, $alpha: 0.1) solid;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        &_Header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        &_Title{
+            font-size: 14px;
+            font-weight: 400;
+        }
+        &_Content{
+            font-size: 12px;
+            font-weight: 300;
+            color: #CCE0FF;
+        }
+    }
+}
+
+.Plus{
+    width: 12px;
+    height: 12px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    &_Hor{
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 12px;
+        height: 1.5px;
+        background-color: #42FFB0;
+        border-radius: 30px;
+    }
+    &_Vert{
+        transform: rotate(90deg);
+        transition: 300ms all;
+        width: 12px;
+        height: 1.5px;
+        border-radius: 30px;
+        background-color: #42FFB0;
+    }
+}

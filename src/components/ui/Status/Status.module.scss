@@ -1,0 +1,22 @@
+.Status{
+    display: flex;
+    flex-direction: column;
+    width: calc(100vw - 40px);
+    justify-content: space-between;
+    gap: 20px;
+    &_Line{
+        display: flex;
+        justify-content: space-between;
+        &>p{
+            color: #CCE0FF;
+            font-size: 14px;
+            font-weight: 300;
+        }
+        &>span{
+            color: white;
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+    
+}

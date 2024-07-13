@@ -1,0 +1,18 @@
+.MainPage{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 138px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.FAQBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+}

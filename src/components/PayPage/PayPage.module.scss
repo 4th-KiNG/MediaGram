@@ -1,0 +1,65 @@
+.PayPage{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 87px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.PayBlock{
+    display: flex;
+    flex-direction: column;
+}
+
+.Inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+    &_Input{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        &>p{
+            font-size: 14px;
+            color: #CCE0FF;
+            font-weight: 300;
+        }
+    }
+}
+
+.StatusBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+    &_Time{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &>p{
+            font-size: 14px;
+            font-weight: 300;
+            color: #CCE0FF;
+        }
+    }
+    &_Status{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &>p{
+            font-size: 14px;
+            font-weight: 300;
+            color: #CCE0FF;
+        }
+        &>span{
+            font-size: 14px;
+            font-weight: 300;
+            color: #FFA800;
+        }
+    }
+}

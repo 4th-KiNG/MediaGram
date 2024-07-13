@@ -1,0 +1,17 @@
+.Button{
+    width: 100%;
+    border-radius: 12px;
+    background-color: white;
+    border: 0px;
+    outline: 0px;
+    padding: 17px 0;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: center;
+    &>p{
+        background: linear-gradient(180deg, #0177FB 0%, #004CF4 100%);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+}

@@ -1,0 +1,32 @@
+.VoucherPage{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 79px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    gap: 12px;
+}
+
+.BuyForm{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    &_Input{
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+        &>p{
+            font-size: 14px;
+            color: #CCE0FF;
+            font-weight: 300;
+        }
+    }
+    
+}
