@@ -49,7 +49,7 @@ const VoucherPage = () => {
                         onClick={() => {
                             if (voucher != undefined && (voucher % 10) == 0){
                                 setErr(false)
-                                nav("/pay")
+                                nav(`/pay?voucher=${voucher}`)
                             }
                             else{
                                 setErr(true)

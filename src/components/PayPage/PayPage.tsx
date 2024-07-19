@@ -5,13 +5,17 @@ import Input from '../ui/Input/Input';
 import Warning from '../ui/Warning/Warning';
 import styles from './PayPage.module.scss'
 import { useState } from 'react';
+import { useSearchParams } from 'react-router-dom';
 
 const PayPage = () => {
     const {t} = useTranslation()
+    const [searchParams] = useSearchParams()
     const [address, setAddress] = useState("")
     const [sum, setSum] = useState("")
     const handleChangeAddress = (e: any) => setAddress(e.target.value)
     const handleChangeSum = (e: any) => setSum(e.target.value)
+    const voucher = searchParams.get("voucher")
+    console.log(voucher)
     return (
         <>
         <div className={styles.PayPage}>
