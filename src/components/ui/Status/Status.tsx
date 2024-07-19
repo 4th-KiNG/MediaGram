@@ -3,7 +3,7 @@ import styles from './Status.module.scss'
 
 interface IStatus{
     address: string,
-    sum: number,
+    sum: string,
     status: string,
     time: string
 }

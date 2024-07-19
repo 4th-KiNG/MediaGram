@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useSearchParams } from 'react-router-dom';
 import { success } from '../../assets';
 import Button from '../ui/Button/Button';
 import InfoBlock from '../ui/InfoBlock/InfoBlock';
@@ -10,6 +10,8 @@ import { useTranslation } from 'react-i18next';
 const StatusPage = () => {
     const nav = useNavigate()
     const {t} = useTranslation()
+    const [searchParams] = useSearchParams()
+    const voucher = searchParams.get("voucher")
     return (
         <>
         <div className={styles.StatusPage}>
@@ -23,7 +25,7 @@ const StatusPage = () => {
                 />
                 <Status
                     address={"TREeCTXK...AYE6hHgK1uF"}
-                    sum={9000}
+                    sum={voucher ? voucher : ""}
                     status={"Выполенный"}
                     time={"01.07.2024 / 21:59:33"}
                 />
