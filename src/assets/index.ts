@@ -1,7 +1,8 @@
 import bg from './bg.png'
 import logo from './logo.svg'
 import play from './play.svg'
-import roundText from './roundText.png'
+import roundTextRu from './roundTextRu.png'
+import roundTextEn from './roundTextEn.png'
 import quest from './quest.svg'
 import questblue from './questblue.svg'
 import cross from './cross.svg'
@@ -12,7 +13,8 @@ export{
     bg,
     logo,
     play,
-    roundText,
+    roundTextRu,
+    roundTextEn,
     quest,
     questblue,
     cross,

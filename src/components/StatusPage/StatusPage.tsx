@@ -4,18 +4,20 @@ import Button from '../ui/Button/Button';
 import InfoBlock from '../ui/InfoBlock/InfoBlock';
 import Status from '../ui/Status/Status';
 import styles from './StatusPage.module.scss'
+import { useTranslation } from 'react-i18next';
 
 
 const StatusPage = () => {
     const nav = useNavigate()
+    const {t} = useTranslation()
     return (
         <>
         <div className={styles.StatusPage}>
             <div className={styles.Status}>
                 <InfoBlock
                     icon={success}
-                    title={"Олата прошла успешно"}
-                    content={"Ожидайте поступление ваучера на адрес, с которого была произведена оплата."}
+                    title={t("StatusPage.title")}
+                    content={t("StatusPage.content")}
                     maxWidth={"333px"}
                     contentWidth={"333px"}
                 />
@@ -26,7 +28,7 @@ const StatusPage = () => {
                     time={"01.07.2024 / 21:59:33"}
                 />
             </div>
-            <Button text={"Вернуться на главную страницу"} onClick={() => {nav("/")}} />
+            <Button text={t("StatusPage.btn")} onClick={() => {nav("/")}} />
         </div>
         </>
     );

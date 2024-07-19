@@ -1,0 +1,70 @@
+{
+    "MainPage": {
+        "title": "Mediagram Vouchers",
+        "content": "MGM Vouchers are created to develop Mediagram's unique advertising ecosystem, offering innovative solutions and technologies to the advertising market.",
+        "FAQ": "Why should you buy vouchers?",
+        "More": "More details",
+        "Btn": "Get a voucher"
+    },
+    "InfoPage": {
+        "title": "Why should you buy vouchers?",
+        "FAQ1": {
+            "title": "Long-term growth potential",
+            "content": "Long-term growth potential: As the Mediagram platform develops, the value of MGM tokens and advertising spaces will increase, providing significant benefits to early investors."
+        },
+        "FAQ2": {
+            "title": "A unique opportunity to be one of the first",
+            "content": "A unique opportunity to be one of the first renters of advertising spaces and gain exclusive access to Mediagram's premium services."
+        },
+        "FAQ3": {
+            "title": "Possibility of early participation",
+            "content": "The chance for early participation in earning rewards, profits from liquidity and staking, as well as access to airdrops."
+        },
+        "Btn": "Get a voucher"
+    },
+    "VoucherPage": {
+        "title": "MGM Vouchers",
+        "content": "Be among the first",
+        "input1": "Enter the number of MGM tokens in multiples 10",
+        "input2": "Voucher value in USDT",
+        "Btn": "Pay",
+        "FAQ": {
+            "title": "How to purchase vouchers?",
+            "more": "More details"
+        }
+    },
+    "FAQForm": {
+        "title": "How to purchase vouchers?",
+        "step1": "Enter the number of vouchers in multiples of 10.",
+        "step2": "Wait for the cost to be calculated and click \"Buy\".",
+        "step3": "Transfer the required amount of USDT (TON) to the provided address.",
+        "step4": "Wait for the voucher to arrive at the address from which the payment was made."
+    },
+    "PayPage": {
+        "title": "MGM Vouchers",
+        "content": "Don't miss your chance to be part of the future of digital advertising with Mediagram!",
+        "input1": "Address",
+        "input2": "Payment amount USDT",
+        "warning": {
+            "title": "Attention!",
+            "content": "Transfer only USDT tokens of the TON (The Open Network) network to this address, otherwise you will permanently lose your funds."
+        },
+        "time": "Time until payment:",
+        "status": "Payment status:",
+        "wait": "Waiting"
+    },
+    "StatusPage": {
+        "title": "Payment was successful",
+        "content": "Wait for the voucher to arrive at the address from which the payment was made.",
+        "address": "Address:",
+        "sum": "USDT payment amount:",
+        "status": "Payment status:",
+        "time": "Time until payment:",
+        "sucsses": "Done",
+        "btn": "Go back to main page"
+    },
+    "LoadingPage": {
+        "title": "Web-based advertising exchange platform No. 1",
+        "content": "Be among the first"
+    }
+}

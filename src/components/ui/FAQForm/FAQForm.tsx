@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { cross, quest } from '../../../assets';
 import Ico from '../Ico/Ico';
 import styles from './FAQForm.module.scss'
@@ -25,6 +26,7 @@ const FAQModule = ({num, content} : IFAQModule) => {
 
 
 const FAQForm = ({onClick} : IFAQ) => {
+    const {t} = useTranslation()
     return (
         <>
         <div className={styles.FAQForm}>
@@ -32,24 +34,24 @@ const FAQForm = ({onClick} : IFAQ) => {
                 <img src={cross} className={styles.Cross} onClick={onClick} alt="" />
                 <div className={styles.Header}>
                     <Ico img={quest} color={"linear-gradient(180deg, #0177FB 0%, #004CF4 100%)"} />
-                    <h1 className={styles.Header_Title}>Как приобрести ваучеры?</h1>
+                    <h1 className={styles.Header_Title}>{t("FAQForm.title")}</h1>
                 </div>
                 <div className={styles.Modules}>
                     <FAQModule
                         num={1}
-                        content={"Укажите количество ваучеров, кратное 10."}
+                        content={t("FAQForm.step1")}
                     />
                     <FAQModule
                         num={2}
-                        content={'Дождитесь расчёта стоимости и нажмите "Купить".'}
+                        content={t("FAQForm.step2")}
                     />
                     <FAQModule
                         num={3}
-                        content={'Переведите необходимое количество USDT (TON) на предоставленный адрес.'}
+                        content={t("FAQForm.step3")}
                     />
                     <FAQModule
                         num={4}
-                        content={'Ожидайте поступление ваучера на адрес, с которого была произведена оплата.'}
+                        content={t("FAQForm.step4")}
                     />
                 </div>
             </div>

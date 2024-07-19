@@ -1,3 +1,4 @@
+import { useTranslation } from 'react-i18next';
 import { logo } from '../../assets';
 import InfoBlock from '../ui/InfoBlock/InfoBlock';
 import Input from '../ui/Input/Input';
@@ -5,35 +6,39 @@ import Warning from '../ui/Warning/Warning';
 import styles from './PayPage.module.scss'
 
 const PayPage = () => {
+    const {t} = useTranslation()
     return (
         <>
         <div className={styles.PayPage}>
             <InfoBlock
                 icon={logo}
-                title={"Ваучеры MGM"}
-                content={"Не упустите свой шанс стать частью будущего цифровой рекламы вместе с Mediagram!"}
+                title={t("PayPage.title")}
+                content={t("PayPage.content")}
                 maxWidth={"318px"}
             />
             <div className={styles.PayBlock}>
                 <div className={styles.Inputs}>
                     <div className={styles.Inputs_Input}>
-                        <p>Адрес</p>
+                        <p>{t("PayPage.input1")}</p>
                         <Input />
                     </div>
                     <div className={styles.Inputs_Input}>
-                        <p>Сумма оплаты USDT</p>
+                        <p>{t("PayPage.input2")}</p>
                         <Input />
                     </div>
                 </div>
-                <Warning content={"Переводите на данный адрес только токены USDT сети TON (The Open Network), иначе вы безвозвратно потеряете свои средства."}/>
+                <Warning
+                    title={t("PayPage.warning.title")}
+                    content={t("PayPage.warning.content")}
+                />
                 <div className={styles.StatusBlock}>
                     <div className={styles.StatusBlock_Time}>
-                        <p>Время до оплаты:</p>
+                        <p>{t("PayPage.time")}</p>
                         <p>0:59:33</p>
                     </div>
                     <div className={styles.StatusBlock_Status}>
-                        <p>Статус оплат:</p>
-                        <span>Ожидает</span>
+                        <p>{t("PayPage.status")}</p>
+                        <span>{t("PayPage.wait")}</span>
                     </div>
                 </div>
             </div>

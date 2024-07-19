@@ -6,10 +6,17 @@ import StatusPage from './components/StatusPage/StatusPage'
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import VoucherPage from './components/VoucherPage/VoucherPage'
+import { useTranslation } from 'react-i18next'
+import { useEffect } from 'react'
+import LangChange from './components/ui/LangChange/LangChange'
 function App() {
-
+  const {i18n} = useTranslation()
+  useEffect(() => {
+    i18n.changeLanguage("ru")
+  }, [])
   return (
     <>
+      <LangChange />
       <Routes>
         <Route path='/loading' element={<LoadingPage />}/>
         <Route path='/' element={<MainPage />} />

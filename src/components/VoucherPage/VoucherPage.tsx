@@ -7,26 +7,28 @@ import Input from '../ui/Input/Input';
 import styles from './Voucher.module.scss'
 import FAQForm from '../ui/FAQForm/FAQForm';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const VoucherPage = () => {
     const nav = useNavigate()
+    const {t} = useTranslation()
     const [isOpen, setOpen] = useState(false)
     return (
         <>
         <div className={styles.VoucherPage}>
             <InfoBlock
                 maxWidth={"318px"}
-                title={"Ваучеры MGM"}
-                content={"Будь в числе первых"}
+                title={t("VoucherPage.title")}
+                content={t("VoucherPage.content")}
                 icon={logo}
             />
             <div className={styles.BuyForm}>
                 <div className={styles.BuyForm_Input}>
-                    <p>Введите количество токенов MGM, кратное 10</p>
+                    <p>{t("VoucherPage.input1")}</p>
                     <Input currency='MGM' />
                 </div>
                 <div className={styles.BuyForm_Input}>
-                    <p>Стоимость ваучера в USDT</p>
+                    <p>{t("VoucherPage.input2")}</p>
                     <Input currency='USDT' />
                 </div>
                 <div style={{marginTop: "4px"}}>
@@ -34,8 +36,8 @@ const VoucherPage = () => {
                 </div>
                 <div style={{marginTop: "24px"}}>
                     <FAQ
-                        title={"Как приобрести ваучеры?"}
-                        content={"Подробнее"}
+                        title={t("VoucherPage.FAQ.title")}
+                        content={t("VoucherPage.FAQ.more")}
                         maxWidth={"211px"}
                         onClick={() => setOpen(true)}
                     />

@@ -4,6 +4,7 @@ import styles from './InfoPage.module.scss'
 import Button from '../ui/Button/Button';
 import InfoBlock from '../ui/InfoBlock/InfoBlock';
 import { useNavigate } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 interface IFAQBlock{
     title: string,
@@ -38,6 +39,7 @@ const FAQBlock = ({title, content} : IFAQBlock) => {
 
 const InfoPage = () => {
     const nav = useNavigate()
+    const {t} = useTranslation()
     return (
         <>
         <div className={styles.InfoPage}>
@@ -50,27 +52,27 @@ const InfoPage = () => {
                 }}
             >
                 <InfoBlock
-                    title={"Почему стоит приобретать ваучеры?"}
+                    title={t("InfoPage.title")}
                     icon={questblue}
                     maxWidth={"318px"}
                     fontSize={"24px"}
                 />
                 <div className={styles.FAQ}>
                     <FAQBlock 
-                        title={"Долгосрочный потенциал роста"} 
-                        content={"Возможность раннего участия в получении вознаграждений, прибыли от ликвидности и стейкинга, а также доступа к аирдропам."} 
+                        title={t("InfoPage.FAQ1.title")} 
+                        content={t("InfoPage.FAQ1.content")} 
                     />
                     <FAQBlock 
-                        title={"Уникальная возможность стать одним из первых"}
-                        content={"Возможность раннего участия в получении вознаграждений, прибыли от ликвидности и стейкинга, а также доступа к аирдропам."}
+                        title={t("InfoPage.FAQ2.title")}
+                        content={t("InfoPage.FAQ2.content")}
                     />
                     <FAQBlock 
-                        title={"Возможность раннего участия"}
-                        content={"Возможность раннего участия в получении вознаграждений, прибыли от ликвидности и стейкинга, а также доступа к аирдропам."}
+                        title={t("InfoPage.FAQ3.title")}
+                        content={t("InfoPage.FAQ3.content")}
                     />
                 </div>
             </div>
-            <Button text={"Получить ваучер"} onClick={() => {nav("/voucher")}} />
+            <Button text={t("InfoPage.Btn")} onClick={() => {nav("/voucher")}} />
         </div>
         </>
     );
