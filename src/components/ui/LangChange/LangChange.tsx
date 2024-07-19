@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next";
 import styles from './LangChange.module.scss'
+import { planet } from "../../../assets";
 
 const LangChange = () => {
     const {i18n} = useTranslation()
@@ -11,6 +12,7 @@ const LangChange = () => {
             }}
             className={styles.LangChange}
         >
+            <img src={planet} alt="" />
             <p>{i18n.language == "ru" ? "RU" : "EN"}</p>
         </button>
         </>

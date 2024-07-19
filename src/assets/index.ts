@@ -8,6 +8,7 @@ import questblue from './questblue.svg'
 import cross from './cross.svg'
 import warning from './warning.svg'
 import success from './success.svg'
+import planet from './planet.svg'
 
 export{
     bg,
@@ -19,5 +20,6 @@ export{
     questblue,
     cross,
     warning,
-    success
+    success,
+    planet
 }

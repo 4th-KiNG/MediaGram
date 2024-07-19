@@ -3,13 +3,20 @@
     position: absolute;
     top: 20px;
     right: 20px;
-    padding: 10px;
-    font-size: 16px;
+    padding: 11px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
     border: 0px;
     outline: 0px;
-    border-radius: 6px;
+    border-radius: 12px;
     z-index: 10;
     &>p{
-        color: black;
+        background: linear-gradient(180deg, #0177FB 0%, #004CF4 100%);
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+        font-size: 14px;
+        font-weight: 500;
     }
 }

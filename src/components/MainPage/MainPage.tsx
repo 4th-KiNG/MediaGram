@@ -5,12 +5,14 @@ import styles from  './MainPage.module.scss'
 import InfoBlock from '../ui/InfoBlock/InfoBlock';
 import FAQ from '../ui/FAQ/FAQ';
 import { useTranslation } from 'react-i18next';
+import LangChange from '../ui/LangChange/LangChange';
 
 const MainPage = () => {
     const nav = useNavigate()
     const {t} = useTranslation()
     return (
         <>
+        <LangChange />
         <div className={styles.MainPage}>
             <InfoBlock
                 title={t("MainPage.title")}

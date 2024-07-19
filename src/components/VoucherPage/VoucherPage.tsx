@@ -32,7 +32,7 @@ const VoucherPage = () => {
                     <Input currency='USDT' />
                 </div>
                 <div style={{marginTop: "4px"}}>
-                    <Button text={"Оплатить"} onClick={() => {nav("/pay")}} />
+                    <Button text={t("VoucherPage.Btn")} onClick={() => {nav("/pay")}} />
                 </div>
                 <div style={{marginTop: "24px"}}>
                     <FAQ
