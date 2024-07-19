@@ -13,6 +13,9 @@ const VoucherPage = () => {
     const nav = useNavigate()
     const {t} = useTranslation()
     const [isOpen, setOpen] = useState(false)
+    const [voucher, setVoucher] = useState<number>()
+    const [err, setErr] = useState(false)
+    const handleChange = (event: any) => setVoucher(event.target.value)
     return (
         <>
         <div className={styles.VoucherPage}>
@@ -25,14 +28,34 @@ const VoucherPage = () => {
             <div className={styles.BuyForm}>
                 <div className={styles.BuyForm_Input}>
                     <p>{t("VoucherPage.input1")}</p>
-                    <Input currency='MGM' />
+                    <Input
+                        currency='MGM'
+                        value={voucher ? voucher.toString() : null}
+                        onChange={handleChange}
+                    />
+                    {err && <p style={{color: "#F8173E"}}>{t("Error")}</p>}
                 </div>
                 <div className={styles.BuyForm_Input}>
                     <p>{t("VoucherPage.input2")}</p>
-                    <Input currency='USDT' />
+                    <Input
+                        currency='USDT'
+                        isDisabled={true}
+                        value={voucher ? (voucher / 9).toFixed(2) : null}
+                    />
                 </div>
                 <div style={{marginTop: "4px"}}>
-                    <Button text={t("VoucherPage.Btn")} onClick={() => {nav("/pay")}} />
+                    <Button
+                        text={t("VoucherPage.Btn")}
+                        onClick={() => {
+                            if (voucher != undefined && (voucher % 10) == 0){
+                                setErr(false)
+                                nav("/pay")
+                            }
+                            else{
+                                setErr(true)
+                            }
+                        }}
+                    />
                 </div>
                 <div style={{marginTop: "24px"}}>
                     <FAQ

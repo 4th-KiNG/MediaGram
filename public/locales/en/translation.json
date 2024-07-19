@@ -66,5 +66,6 @@
     "LoadingPage": {
         "title": "Web-based advertising exchange platform No. 1",
         "content": "Be among the first"
-    }
+    },
+    "Error": "Enter a multiple of 10"
 }
